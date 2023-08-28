@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    background-color: #EDEDEE;
+    /* position: relative; */
+}
+
+.container{
+    width: 95%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+ul{
+    width: 100%;
+    list-style: none;
+}
+
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+span.new-tag{
+    padding: 5px 10px;
+    background-color: #449DF1;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+.dashboard-menu{
+    width: 20%;
+    position: relative;
+    background-color: #3B4B64;
+}
+.dashboard-menu-header{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #303C56;
+}
+.dashboard-menu-header > .logo-container{
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard-menu-body{
+    width: 100%;
+    /* background-color: #3B4B64; */
+}
+.dashboard-menu-body > ul li{
+    padding: 20px 30px;
+    /* background-color: red; */
+    position: relative;
+}
+.dashboard-menu-body > ul li:hover{
+    background-color: #ffffff48;
+}
+.dashboard-menu-body > ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.dashboard-menu-body > ul li a span{
+    display: inline-block;
+    margin-right: 15px;
+}
+.dashboard-menu-body > ul li a span:first-child{
+    font-size: 1.2rem;
+}
+.dashboard-menu-body > ul li a span:last-child{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dashboard-menu-footer{
+    width: 100%;
+    padding: 20px 0;
+    text-align: right;
+    background-color: #303C56;
+    position: absolute;
+    bottom: 0;
+}
+.dashboard-menu-footer > button{
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.dashboard-body{
+    width: 80%;
+}
+
+.dashboard-body header{
+    width: 100%;
+    background-color: #fff;
+}
+.dashboard-body header .container nav{
+    width: 100%;
+    display: flex;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #303C56;
+}
+.dashboard-body header .container nav > .bar-logo{
+    width: 5%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.dashboard-body header .container nav > ul{
+    width: 95% !important;
+}
+.dashboard-body header .container nav > ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.dashboard-body header .container nav > ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.dashboard-body header .container .breadcrumb{
+    width: 100%;
+    padding: 10px 0;
+}
+.dashboard-body header .container .breadcrumb > ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.dashboard-body header .container .breadcrumb > ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.dashboard-body header .container .breadcrumb > ul li a span:first-child{
+    display: inline-block;
+    margin-right: 15px;
+}
+.dashboard-body header .container .breadcrumb > ul li:first-child a span:first-child{
+    display: none;
+}
+
+
+
+
+
+
+
+.dashboard-body main{
+    width: 100%;
+}
+main .dashboard-statistic{
+    width: 100%;
+}
+main .dashboard-statistic .container .dashboard-statistic-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.dashboard-statistic-container .stats-item{
+    font-size: 1rem;
+    color: #EDEDEE;
+    background-color: #321FDB;
+    width: 300px;
+    padding: 15px;
+    font-size: 1rem;
+    position: relative;
+    border-radius: 15px;
+}
+.dashboard-statistic-container .stats-item h3 span:first-child{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.dashboard-statistic-container .stats-item > h4{
+    margin: 5px 0;
+}
+.dashboard-statistic-container .stats-item > span{
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 1.2rem;
+}
+.dashboard-statistic-container .stats-item > img{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+main .main-curve{
+    width: 100%;
+    
+}
+
+.main-curve-container{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #321FDB;
+    border-radius: 15px;
+    padding: 25px 10px;
+}
+main .main-curve .container .main-curve-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-curve-header .left-portion{
+    width: 30%
+}
+.main-curve-header .left-portion h3{
+    font-size: 2.5rem;
+    color: #303C56;
+}
+.main-curve-header .left-portion p{
+    font-size: 1rem;
+    color: #303C56;
+}
+
+.main-curve-header .right-portion{
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.main-curve-header .right-portion > span{
+    display: inline-block;
+    padding: 20px 10px;
+    color: #321FDB;
+    font-size: 1.5rem;
+    
+}
+.main-curve-header .right-portion .curve-changer-nav{
+    width: 90%;
+    position: relative;
+}
+
+.main-curve-header .right-portion .curve-changer-nav > ul {
+    width: 450px;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 1px solid #321FDB;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.main-curve-header .right-portion .curve-changer-nav > ul li{
+    display: inline-block;
+    padding: 25px 50px;
+    background-color: #fff;
+}
+.main-curve-header .right-portion .curve-changer-nav > ul li:hover{
+    background-color: #B0B7BF;
+}
+.main-curve-header .right-portion .curve-changer-nav > ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+main .main-curve .main-curve-body{
+    width: 100%;
+}
+
+.main-curve-body .curve-holder{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1060px){
+
+
+
+    
+
+}
+
+@media (max-width: 740px){
+
+
+   
+
+
+
+
+}
+
+
+
+
+
